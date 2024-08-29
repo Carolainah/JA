@@ -1,0 +1,276 @@
+/* Selectoes, son los nombres de las etiquetas uwu*/
+
+/*Import font (Sin el html)*/
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url("https://i.pinimg.com/564x/11/e6/a6/11e6a6a7eed4cdccca8e92ec13da3d0a.jpg");
+}
+
+/* Le damos estilazo a nuestra cabecera */
+header {
+    /* Hacemos que ocupe el 100% de arriba */
+    /* Queremos que se distribuyan a los extremos*/
+    width: 90%;
+    /* Como hay 2 divs, queremos moverlos asi que los hacemos flexibles*/
+    display: flex;
+    /* Queremos que esten en fila ROW */
+    flex-direction: row;
+    /* Queremos que se distribuya */
+    justify-content: space-between;
+    font-family: Cinzel ;
+    
+}
+/* Css del logo de Navbar uwu*/
+header .logo img{
+    padding-top: 40px;
+    width: 300px;
+    padding-left: 50px;
+}
+
+/*Le damos estilo a las listas de nuestra cabeceera*/
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}
+
+/* Aqui modificamos la letra del sub menu del menu */
+ul .dropdown-item {
+    /* Aqui la hacemos chiquita, claro que chi*/
+    font-size: 13px;
+    /* Aqui la hacemos chiquita, claro que chi*/
+    font-weight: bold;
+}
+
+header ul li {
+    /*Se supone que ayuda a que se separen, pero margin y padding sacan el mismo resutlado, weno pue usemos padding*/
+    padding: 10px;
+    font-size: 15px;
+    padding-top: 30px; 
+} 
+
+
+.nav-link {
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #a9ccfff6;
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #3b95e956;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        display: none; /* Oculta el menú por defecto */
+        background-color: #92e2f713; /* Fondo para el menú desplegable */
+        position: absolute;
+        width: 100%;
+        top: 50px; /* Ajustar según el alto del navbar */
+        left: 0;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    .nav-sm.active .nav-list {
+        display: flex; /* Mostrar el menú al hacer clic en el botón */
+    }
+}
+
+
+
+
+
+/*Quito el subrayado del hipervínculo*/
+nav a {
+    text-decoration: none;
+    font-style:unset;
+}
+
+/* Pa cuando pase el mouse lo subraya lindo */
+nav a:hover {
+    text-decoration: underline;
+}
+
+.cointainer-sm {
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 30px;
+    width: 95%;
+}
+
+/*Ajuste del tamaño del botón */
+.btn-custom-width {
+    /*Medidas del botonazo*/
+    width: 90px; 
+    height: 33px;
+    /* Se le pusó padding al botón, para que no esté tan abajo (Aunq solo aplicó para la letra xd)*/
+    padding-bottom: 20px;
+    font-size: 15px;
+
+}
+
+img {
+    /* El alto se pone automático */
+    width: 150px;
+
+}
+
+.carrusel{
+    padding-top: 20px;
+    width: 98%;
+
+    
+}
+
+body .cointainer-sm {
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 30px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;  
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(128, 114, 250);
+    font-family: Cinzel;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+
+.contenedor  {
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 30px;
+    /*La cajita va a ser flexible (Voy a poder posicionarlas)*/
+    display: flex;
+    /*Aqui indico que posición o dirección quiero que tome ROW, COLUMN*/
+    flex-direction: row;
+    /*Indico que tanto queremos que abarque*/
+
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 30px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px; 
+    width: 95%;
+   
+}
+
+.caja {
+    /*Hacemos flexible las cajitas*/
+    display: flex;
+    /* Que se muestren en columnas*/
+    flex-direction: column;
+    /* Hace que se distribuyan en toda la página*/
+    width: 80%;
+    /* Justifica ahora si el texto? */
+    justify-content:center;
+    /* Justifica todo menos el texto al centro :( */
+    align-items:center;
+    text-align: center;
+    
+    /*Distancia entre ellos*/
+    padding: 10px;
+    /*Distancia externa entre ellos*/
+    margin-top: 20px;
+}
+
+.caja img {
+    width: 200px;
+    border-radius: 300px;
+}
+
+.caja a {
+    text-decoration: none;
+}
+
+.caja a:hover {
+    text-decoration: underline;
+}
+
+
+    
+.base { 
+    justify-content: center;
+    /* Como hay 2 divs, queremos moverlos asi que los hacemos flexibles*/
+    display: flex;
+    /* Queremos que esten en fila ROW */
+    flex-direction: row;
+    /* Queremos que se distribuya */
+    width: 95%;
+    /* Queremos que se distribuyan a los extremos
+    justify-content: space-between; 
+    align-self: center;
+    width: 80%;
+    */
+}
+
+
+.video {
+    align-self: center;
+}
+
+h3{ 
+    color: rgb(128, 112, 216);
+    font-family: cinzel;
+    font-size: 20px;
+}
+
+
+/* Un bordecito para que se vean los contenedores div */
+/* div {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;}*/
+    
+    
+
+
+div .row-sm{
+    font-family: Poppins;
+}
+
+
+
+/* */
+footer p {
+    font-size: small;
+    font-family: Poppins;
+    text-align: center;
+}
+

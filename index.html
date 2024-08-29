@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- UTF-8 es para carácteres internacionales-->
+    <meta charset="UTF-8" />
+    <!-- Esto hace posible que se pueda visualizar en varios dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Estilos para modificar (Los movimos a style.css)-->
+    <!-- Link para CSS -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link para JS -->
+    <script defer src="./assets/js/codigo.js"></script>
+    <!-- Un favicon para que se vea cute -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/ositoicon.png">
+
+    <title>Mi página de JA</title>
+</head>
+<body>
+    <!-- Barrita de cabecera -->
+    <header>
+        <!-- El loguito uwu-->
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="logo" title="Loguito lindo de JA">
+        </div>
+        <div clase="nav-sm" >
+        <!-- Menú de navegación-->
+         <nav>
+         <!-- Nuestra de lista de nuestro menu uwu -->
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link" href="https://junior.org.ar/" target="_blank">
+                    <strong> HOME </strong> 
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://junior.org.ar/nosotros/" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <strong> NOSOTROS </strong>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://junior.org.ar/nosotros/" target="_blank" >QUIÉNES SOMOS</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/programas/" target="_blank">PROGRAMAS</a></li>
+                    <!-- SUB MENU  -->
+                    <li><a class="dropdown-item" href="https://junior.org.ar/plan-estrategico/" target="_blank">PLAN ESTRATÉGICO</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/nosotros/rendicion-de-cuentas/" target="_blank">RENDICIÓN DE CUENTAS</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/sedes/" target="_blank">SEDES</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/nosotros/consejo/" target="_blank">CONSEJO</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/nosotros/equipo/" target="_blank">EQUIPO</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/aliados/" target="_blank">ALIADOS</a></li>
+                </ul>
+            </li>
+            <li> 
+                <a class="nav-link" href="https://junior.org.ar/inscripciones/" target="_blank">
+                    <strong> INSCRIPCIONES </strong> 
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://junior.org.ar/novedades/" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"> 
+                    <strong>  NOVEDADES </strong>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://junior.org.ar/memoria/" target="_blank">MEMORIA 2022</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/aniversario/"target="_blank">30 AÑOS</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://junior.org.ar/nosotros/" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>  SUMATE </strong>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://junior.org.ar/alumni/" target="_blank">ALUMNI</a></li>
+                    <li><a class="dropdown-item" href="https://junior.org.ar/sumate-voluntario/" target="_blank">VOLUNTARIADO</a></li>
+                </ul>
+            </li>
+            <!-- Botón Donar -->
+            <li>
+                <a href="https://junior.org.ar/donantes/" target="_blank">
+                    <button type="button" class="btn btn-primary btn-custom-width">DONÁ</button>
+                </a>
+            </li>
+            <li> 
+                <a class="nav-link" href="#contacto">
+                    <strong> CONTACTO </strong> 
+            </a> 
+            </li>
+            <!-- <button class="menu-toggle">Menu</button> -->    
+        </div>
+        </ul>
+        </nav>
+    </header>  
+    <div class="cointainer-sm">
+        <h2>
+            QUIÉNES SOMOS
+        </h2>
+        <p>
+            Somos una de las ONG más grandes del mundo.  A través del aprendizaje activo en educación financiera, formación para el trabajo y emprendimiento, preparamos e inspiramos a los jóvenes para que sean protagonistas de su futuro.
+        </p>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="carrusel">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 90%;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/ca1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/ca2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/ca3.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>  
+    </div>
+        <!-- Nuestro contenedor general que se hará chiquito aqui ponemos todas las cajitas-->
+         <div class="contenedor">
+            <!-- Colocamos clase a nuestras cajitas, nuestros bloquecitos de información -->
+            <div class="caja">
+                <img src="./assets/img/desafio.jpg" alt="desafío" title="El desafío es ayudar" />
+                <div>
+                    <h2 id="desafio">EL DESAFÍO</h2>   
+                </div>
+                <div id="contenido">
+                    <!-- De aqui pa abajo es la info que voy a ocultar :3-->
+                <p>
+                    Insertos en la cuarta revolución industrial, la tecnología irrumpe en
+                    todos los ámbitos de la vida: aparecen la robótica, la biotecnología, la
+                    inteligencia artificial. Desaparecen profesiones y surgen nuevas. 
+                    <br>
+                    Los jóvenes son especialmente vulnerables… 
+                    <a href="http://junior.org.ar/nosotros/" target="_blank" rel="noopener noreferrer"> Ver más... </a>
+                </p>
+                </div>
+                <br>
+                <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido"> 🩷 </button>
+            </div>
+            <!-- Nuestra segunda cajita -->
+            <div class="caja">
+                <img src="./assets/img/solucion.jpg" alt="solución" title="Damos la solución" />
+                <div>
+                    <h2 id="solucion">LA SOLUCIÓN</h2>
+                </div>
+                <div id="contenido2">
+                    <p>
+                    Desde hace 100 años, promovemos una actitud emprendedora en millones de
+                    jóvenes para que se sientan protagonistas y emprendedores de sus propias
+                    vidas. 
+                    <br>
+                    Todas nuestras iniciativas son un puente… 
+                    <a href="http://junior.org.ar/nosotros/" target="_blank" rel="noopener noreferrer"> Ver más... </a>
+                    </p>
+                </div>
+                <br>
+                <button onclick='muestra_oculta("contenido2")' class="btn btn-primary" form="contenido2"> 🩷 </button>
+            </div>
+            <!-- Nuestra tercera cajita -->
+            <div class="caja">
+                <img src="./assets/img/impacto.jpg" alt="impacto" title="El impacto de los jóvenes" srcset="" />
+                <div>
+                    <h2> IMPACTO</h2>
+                </div>
+                <div id="contenido3">
+                    <p>
+                    Trabajamos en cientos de escuelas cada año formando a miles de jóvenes
+                    para que estén mejor preparados para el futuro. 
+                    <br>
+                    Conocé en detalle los resultados de nuestras acciones en los distintos
+                    ejes de trabajo… 
+                    <a href="http://junior.org.ar/nosotros/" target="_blank" rel="noopener noreferrer"> Ver más... </a>
+                </p>
+                </div>
+                <br>
+                <button onclick='muestra_oculta("contenido3")' class="btn btn-primary" form="contenido3"> 🩷 </button>
+            </div>
+            </div>
+            <!-- Aun no lo pongo responsivo :c ya me cansé Martha -->
+            <div class="base cointainer-sm">
+                 <!-- IFrame -->
+                <div class="video">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/CAvju4e-EPk?si=jVgtYMg7eJ00hWMg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="row-sm">
+                    <br>
+                        <h2 id="contacto"><b> CONTACTO: </h2></b>
+                        <h3> Buenos Aires </h3>                    
+                            <p>
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-buildings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" /><path d="M16 8h2c1 0 2 1 2 2v11" /><path d="M3 21h18" /><path d="M10 12v0" /><path d="M10 16v0" /><path d="M10 8v0" /><path d="M7 12v0" /><path d="M7 16v0" /><path d="M7 8v0" /><path d="M17 12v0" /><path d="M17 16v0" /></svg>
+                                Av. San Martin 2.771, Ciudad Autónoma de Buenos Aires</p>
+                            <p>
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                                Para contactarnos llama a: <a href="tel:+011-3369-1326"> 011-3369-1326</p>
+                            
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-mail">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
+                                </svg>                            
+                                <a href="mailto:novedades@junior.org.ar">novedades@junior.org.ar</a>
+                            </p>
+        
+                    </div>
+                <div class="col-sm">
+                    <div class="col-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210104.38939661454!2d-58.623076194197424!3d-34.632445258867406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33533433603c1%3A0x45810ad3a92f29c7!2sJunior%20Achievement%20Argentina!5e0!3m2!1ses!2smx!4v1724708186519!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                    </div>
+                </div>
+            </div>
+           
+
+    <!-- Pie de página-->
+    <footer>
+        <p>
+            <a href="https://junior.org.ar/politica-de-privacidad/"> Política de privacidad</a>
+             | ©2022 Junior Achievement Argentina. Todos los derechos reservados.
+        </p>
+    </footer>
+    <!-- Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- 
+Derechos reservados a mi
+            Para mayor informes manda correo a:
+            <a href="mailto:anacarovama@gmail.com">         anacarovama@gmail.com 
+            Para contactarnos llama a: <a href="tel:+525513875512"> 5513875512
+                
+-->
